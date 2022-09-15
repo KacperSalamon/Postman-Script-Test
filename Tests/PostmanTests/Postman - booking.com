@@ -19,7 +19,10 @@ pm.test("ID verify", () => {
 
 pm.test("Cookies - verify", () => { 
     pm.response.cookies.get("_pxhd");
-    pm.expect(pm.cookies.get("_pxhd")).to.eql('y6lH8XdsgKEhPltvm%2F14pcfPHcx1odQ3msv-EtMrozUccptp%2Fzjant6NdSTcr127S13nDx6r3xkyhZIz0CuTfg%3D%3D%3AISWH7vPNUaufI77aZUI%2FXAa3S0DM41U1MHKC3W%2FAuTdlad1pgpQZORa3rCKP1aPRKtqXavGhMti10H4%2FVchgku7AtKfvvZQL5r1MVYrbBFc%3D');
+    const string = "y6lH8XdsgKEhPltvm%14pcfPHcx1odQ3msv-EtMrozUccptp%zjant6NdSTcr127S13nDx6r3xkyhZIz0CuTfg%3D%3D%3AISWH7vPNUaufI77aZUI%2FXAa3S0DM41U1MHKC3W%2FAuTdlad1pgpQZORa3rCKP1aPRKtqXavGhMti10H4%2FVchgku7AtKfvvZQL5r1MVYrbBFc%3D" 
+    const changeString = string.replaceAll('%', '/')
+    console.log(changeString)
+    pm.expect(pm.cookies.get("_pxhd")).to.eql(changeString);
 })
 
 pm.test("Cookie verify v2", () => {

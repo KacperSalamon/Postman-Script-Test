@@ -1,3 +1,7 @@
+#you can also run below tests by use Newman
+#If you want do it by Newman - just run this order in cmd % powershell
+#newman run https://www.getpostman.com/collections/9aeb7abd6820fc7dab55
+
 pm.test("Status code", function() {
     pm.response.to.have.status("OK");
     pm.expect(pm.response.code).to.eql(200);

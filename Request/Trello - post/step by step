@@ -1,0 +1,10 @@
+How to send a simple request where you could create new borads? 
+
+The first step you need to go documentation on this webpage --> https://developer.atlassian.com/cloud/trello/rest/api-group-boards/#api-boards-post
+This is necessery to know exactly what web-address to send the request
+
+So now we know where it should be send - https://api.trello.com/1/boards/?name={name}&key=APIKey&token=APIToken
+
+The last two things we have to do - generate KEY & TOKEN from https://trello.com/app-key and https://trello.com/1/token/approve
+
+If we have followed the above steps, we can confidently send an inquiry from Postman - remember to add the name. After that, we can see that our board has appeared

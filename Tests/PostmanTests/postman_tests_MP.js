@@ -1,6 +1,55 @@
 let Body = pm.response.json()
 console.log(pm.response)
 
+pm.test("Verify error", () => {
+    pm.response.to.have.not.error;
+})
+
+let Body = pm.response.json()
+
+pm.test("Check the id have a any number", () => {
+    let number = [0,1,2,3,4,5,6,7,8,9]
+    pm.expect(Body.Id).to.include.oneOf(number)
+})
+
+let cookies = pm.expect(pm.response.cookie).to.not.exist
+
+if (cookies) {
+    pm.test("NO COOKIES", () => {
+
+    })
+}else{
+    pm.test("COOKIES INCLUDE OF RESPONSE", () => {
+
+    })
+}
+
+pm.test("Url check", () => {
+    //pm.expect(JsonBody.url).to.eql("https://trello.com/b/ZBtm7MR6/new")
+    pm.expect(JsonBody.url).to.be.a("string")
+    pm.expect(JsonBody.url).to.include("/")
+    
+    let protcolType = pm.expect(JsonBody.url).to.include("https");
+
+    if (protcolType){
+        console.log("Type of protocol = https")
+    }else{
+        console.log("Type of protocol is NOT https")
+    }
+})
+
+pm.test("Response code/status", () => {
+    pm.response.to.have.status("OK");
+    pm.expect(pm.response.code).to.eql(200)
+    pm.expect(pm.response.code).to.not.eql.oneOf([400,401,403,404,405,409,453,500,503,504])
+})
+
+pm.test("Verify responseTime", () => {
+    pm.expect(pm.response.responseTime).to.be.below(200)
+    pm.expect(pm.response.responseTime).to.be.lessThan(200)
+    pm.expect(pm.response.responseTime).to.be.greaterThan(1)
+})
+
 
 pm.test("Check all object have got ID", function() {
     let iD = Body.map(ID => {
@@ -106,6 +155,13 @@ pm.test("EnumTypeUsage is a array?", () => {
 pm.test("SyncId", () => {
     pm.expect(Body[1].SyncId).to.be.a("string")
     
+})
+
+pm.test("Any empty object's?", () => {
+    let emptyObject = {}
+    Body.map(iteration => {
+        pm.expect(iteration).to.include(emptyObject)
+    })
 })
 
 const regex = /^\d{8}-\d{4}-\d{4}-\d{4}-\d{12}$/

@@ -25,7 +25,6 @@ if (cookies) {
 }
 
 pm.test("Url check", () => {
-    //pm.expect(JsonBody.url).to.eql("https://trello.com/b/ZBtm7MR6/new")
     pm.expect(JsonBody.url).to.be.a("string")
     pm.expect(JsonBody.url).to.include("/")
     

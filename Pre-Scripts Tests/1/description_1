@@ -1,0 +1,2 @@
+This is my first pre-script test which create special {{accessToken}} - 
+therefore, we do not have to check our token (in this case, Bearer Token) when sending the request. The script was developed together with the developer

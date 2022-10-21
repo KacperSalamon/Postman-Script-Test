@@ -184,3 +184,13 @@ if (name){
 pm.test("Body does not have IP adress", () => {
     return pm.expect(pm.response.json(), "Body have IP adress").to.not.include("IP adress");
 })
+
+let objectArray = Object.keys(Body).length;
+
+console.log(objectArray);
+
+if(objectArray === 10){
+    pm.test(`In Body are ${objectArray} object`, () => {
+        
+    }) 
+}

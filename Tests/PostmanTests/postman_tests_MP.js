@@ -194,3 +194,7 @@ if(objectArray === 10){
         
     }) 
 }
+
+pm.test("Successful POST request", function () {
+    pm.expect(pm.response.code).to.be.not.oneOf([201, 202]);
+});

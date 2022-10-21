@@ -172,3 +172,15 @@ if (pm.expect(Body[1].SyncId) === regex) {
 }else{
     console.log("SyncId <> regex format")
 }
+
+let name = pm.expect(Body[0].Values[0].Name).to.exist
+
+if (name){
+    pm.test("Name should be a 'subscription'", () => {
+        pm.expect(name).to.be.eql("test")
+    })
+}
+
+pm.test("Body does not have IP adress", () => {
+    return pm.expect(pm.response.json(), "Body have IP adress").to.not.include("IP adress");
+})

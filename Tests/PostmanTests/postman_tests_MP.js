@@ -198,3 +198,8 @@ if(objectArray === 10){
 pm.test("Successful POST request", function () {
     pm.expect(pm.response.code).to.be.not.oneOf([201, 202]);
 });
+
+pm.test("The length of first element in Body is 1", () => {
+    idToString = Body[0].Id.toString()
+    pm.expect(idToString).to.have.length(1)
+})

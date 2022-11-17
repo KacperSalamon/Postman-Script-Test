@@ -1,0 +1,383 @@
+{
+	"id": "0148ef0c-c684-41f4-9c1e-b68b1d8e029b",
+	"name": "MP_TEST",
+	"timestamp": "2022-11-17T13:14:28.177Z",
+	"collection_id": "21257477-049d4004-74a4-4898-a49a-fdfea37ff207",
+	"folder_id": 0,
+	"environment_id": "21257477-4442f789-6763-4852-8542-5b26583365ce",
+	"totalPass": 35,
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "2894de92-0e91-4093-8d5b-3ef07d0c1c1b",
+			"name": "Random product",
+			"url": "https://hubert-int.media-press.tv/hs/Config/tba//getLogicalProduct?id=ba5007e1-5811-57a2-be2e-67f33f23ed93",
+			"time": 174,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify error": true,
+				"Check the id have a any number": true
+			},
+			"testPassFailCounts": {
+				"Verify error": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the id have a any number": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Verify error": true,
+					"Check the id have a any number": true
+				}
+			]
+		},
+		{
+			"id": "6e620567-eefc-4223-87aa-00506842879a",
+			"name": "Testy będziemy robić",
+			"url": "https://hubert-int.media-press.tv/hs/phoboss3/api//config/enum-type",
+			"time": 769,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Staus code/response": true,
+				"ResponseTime": false,
+				"ResponseSize": true,
+				"Any error": false,
+				"Enum name [0]": true,
+				"Correct name Values of enum [0]": true,
+				"Id should exist in all enumtypes": true
+			},
+			"testPassFailCounts": {
+				"Staus code/response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ResponseTime": {
+					"pass": 0,
+					"fail": 1
+				},
+				"ResponseSize": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Any error": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Enum name [0]": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct name Values of enum [0]": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id should exist in all enumtypes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				769
+			],
+			"allTests": [
+				{
+					"Staus code/response": true,
+					"ResponseTime": false,
+					"ResponseSize": true,
+					"Any error": false,
+					"Enum name [0]": true,
+					"Correct name Values of enum [0]": true,
+					"Id should exist in all enumtypes": true
+				}
+			]
+		},
+		{
+			"id": "37421245-97e7-42de-aa95-fd8a4283b87a",
+			"name": "Cinemas",
+			"url": "http://hubernetes.media-press.tv/cinema-phil/schedules/date/2022-10-26/cinemaid/58900",
+			"time": 8817,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8817
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f9b1c98e-e3d1-4ce4-92a9-738bac633a7a",
+			"name": "Cinemas_spectacles",
+			"url": "http://hubernetes.media-press.tv/cinema-phil/schedules/date/2022-11-16/spectacles/paper",
+			"time": 8390,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8390
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3bfaae58-df7e-4a3e-af5f-e65bea72371e",
+			"name": "Enumy_phoboss",
+			"url": "https://hubert-int.media-press.tv/hs/phoboss3/api//config/enum-type",
+			"time": 285,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify error": false,
+				"Check the id have a any number": true,
+				"NO COOKIES": true,
+				"Response code/status": true,
+				"Verify responseTime": false,
+				"Check all object have got ID": true,
+				"ID = 6": true,
+				"Where is name = 'test enum'": true,
+				"Name is exist in all Enum's": true,
+				"Any cookies": true,
+				"Header verify": true,
+				"Header name verify": true,
+				"All enum's have Values?": true,
+				"Check ID of position": true,
+				"Date should include +0100": true,
+				"EnumTypeUsage is a array?": true,
+				"SyncId": true,
+				"Any empty object's?": true,
+				"Values should be a array": true,
+				"Name should be a 'subscription'": false,
+				"Body does not have IP adress": true,
+				"Successful POST request": true,
+				"Regex verify": false,
+				"The 6 has name = Paid type enum. The all value of object is 8": true,
+				"The 7 has name = test enum. The all value of object is 8": true,
+				"The 8 has name = Likelihood. The all value of object is 8": true,
+				"The 5 has name = CountryCodes. The all value of object is 8": true,
+				"The 9 has name = TV Categories. The all value of object is 8": true,
+				"The 11 has name = File Type. The all value of object is 8": true,
+				"The 12 has name = BestBackgroundColor. The all value of object is 8": true,
+				"The 13 has name = PlurimediaVideoType. The all value of object is 8": true,
+				"The length of first element in Body is 1": true
+			},
+			"testPassFailCounts": {
+				"Verify error": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check the id have a any number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"NO COOKIES": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response code/status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify responseTime": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check all object have got ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID = 6": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Where is name = 'test enum'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is exist in all Enum's": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Any cookies": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Header verify": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Header name verify": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All enum's have Values?": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check ID of position": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Date should include +0100": {
+					"pass": 1,
+					"fail": 0
+				},
+				"EnumTypeUsage is a array?": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SyncId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Any empty object's?": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Values should be a array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name should be a 'subscription'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body does not have IP adress": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Regex verify": {
+					"pass": 0,
+					"fail": 1
+				},
+				"The 6 has name = Paid type enum. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 7 has name = test enum. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 8 has name = Likelihood. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 5 has name = CountryCodes. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 9 has name = TV Categories. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 11 has name = File Type. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 12 has name = BestBackgroundColor. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 13 has name = PlurimediaVideoType. The all value of object is 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The length of first element in Body is 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				285
+			],
+			"allTests": [
+				{
+					"Verify error": false,
+					"Check the id have a any number": true,
+					"NO COOKIES": true,
+					"Response code/status": true,
+					"Verify responseTime": false,
+					"Check all object have got ID": true,
+					"ID = 6": true,
+					"Where is name = 'test enum'": true,
+					"Name is exist in all Enum's": true,
+					"Any cookies": true,
+					"Header verify": true,
+					"Header name verify": true,
+					"All enum's have Values?": true,
+					"Check ID of position": true,
+					"Date should include +0100": true,
+					"EnumTypeUsage is a array?": true,
+					"SyncId": true,
+					"Any empty object's?": true,
+					"Values should be a array": true,
+					"Name should be a 'subscription'": false,
+					"Body does not have IP adress": true,
+					"Successful POST request": true,
+					"Regex verify": false,
+					"The 6 has name = Paid type enum. The all value of object is 8": true,
+					"The 7 has name = test enum. The all value of object is 8": true,
+					"The 8 has name = Likelihood. The all value of object is 8": true,
+					"The 5 has name = CountryCodes. The all value of object is 8": true,
+					"The 9 has name = TV Categories. The all value of object is 8": true,
+					"The 11 has name = File Type. The all value of object is 8": true,
+					"The 12 has name = BestBackgroundColor. The all value of object is 8": true,
+					"The 13 has name = PlurimediaVideoType. The all value of object is 8": true,
+					"The length of first element in Body is 1": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 18435,
+	"collection": {
+		"requests": [
+			{
+				"id": "2894de92-0e91-4093-8d5b-3ef07d0c1c1b",
+				"method": "GET"
+			},
+			{
+				"id": "6e620567-eefc-4223-87aa-00506842879a",
+				"method": "GET"
+			},
+			{
+				"id": "37421245-97e7-42de-aa95-fd8a4283b87a",
+				"method": "GET"
+			},
+			{
+				"id": "f9b1c98e-e3d1-4ce4-92a9-738bac633a7a",
+				"method": "GET"
+			},
+			{
+				"id": "3bfaae58-df7e-4a3e-af5f-e65bea72371e",
+				"method": "GET"
+			}
+		]
+	}
+}

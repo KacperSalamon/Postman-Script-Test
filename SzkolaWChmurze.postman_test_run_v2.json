@@ -1,0 +1,140 @@
+{
+	"id": "b71757ba-f3cc-4b65-aa1e-84d8e87d3535",
+	"name": "SzkolaWChmurze",
+	"timestamp": "2022-12-02T07:01:18.324Z",
+	"collection_id": "21257477-25f2bf70-2ae9-459a-8b42-7f5c2c7632e2",
+	"folder_id": 0,
+	"environment_id": "21257477-4442f789-6763-4852-8542-5b26583365ce",
+	"totalPass": 9,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "5764f866-e7ed-4285-b27f-1504cfb5c727",
+			"name": "https://1wtbn3ao24.api.quickmocker.com/articles/1/posts",
+			"url": "https://1wtbn3ao24.api.quickmocker.com/articles/1/posts",
+			"time": 202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response code/status": true,
+				"Verify responseTime": true,
+				"Any errors": true,
+				"Id is number for body[0]": true,
+				"All id is number": true,
+				"All article_id is number": false,
+				"Cookies is exist": true,
+				"Where is name = first post": true,
+				"ALl content inlude post": true,
+				"Endpoint have header Connection": true
+			},
+			"testPassFailCounts": {
+				"Response code/status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify responseTime": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Any errors": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is number for body[0]": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All id is number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All article_id is number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Cookies is exist": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Where is name = first post": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ALl content inlude post": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Endpoint have header Connection": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Response code/status": true,
+					"Verify responseTime": true,
+					"Any errors": true,
+					"Id is number for body[0]": true,
+					"All id is number": true,
+					"All article_id is number": false,
+					"Cookies is exist": true,
+					"Where is name = first post": true,
+					"ALl content inlude post": true,
+					"Endpoint have header Connection": true
+				}
+			]
+		},
+		{
+			"id": "0e572db7-0bd1-40e6-acbb-1fe7aeac39b9",
+			"name": "https://1wtbn3ao24.api.quickmocker.com/articles/",
+			"url": "https://1wtbn3ao24.api.quickmocker.com/articles/",
+			"time": 92,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal server error"
+			},
+			"tests": {
+				"Status is ok?": false,
+				"Endpoint haven't error": false
+			},
+			"testPassFailCounts": {
+				"Status is ok?": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Endpoint haven't error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				92
+			],
+			"allTests": [
+				{
+					"Status is ok?": false,
+					"Endpoint haven't error": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 294,
+	"collection": {
+		"requests": [
+			{
+				"id": "5764f866-e7ed-4285-b27f-1504cfb5c727",
+				"method": "GET"
+			},
+			{
+				"id": "0e572db7-0bd1-40e6-acbb-1fe7aeac39b9",
+				"method": "GET"
+			}
+		]
+	}
+}

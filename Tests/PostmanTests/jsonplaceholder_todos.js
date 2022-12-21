@@ -48,6 +48,24 @@ pm.test("userId is greater by one in every 20 id's", () => {
     pm.expect(Body[60].userId).is.eql(4);
 })
 
+let randomv2 = random / 10
+let randomv3 = (Math.floor(randomv2 / 2 + 1))
+console.log(randomv3)
+
+pm.test(`The ${random} id number is inside of ${randomv3}`, () => {   
+})
+
 pm.test("Cookies exist", () => {
     pm.expect(pm.response.cookie).to.exist;
+})
+
+pm.test("The id is eql the number of object", () => {
+    pm.expect(Body[random - 1].id).is.eql(random) // we need to - 1 because object start from 0 not 1!
+})
+
+pm.test("Title's are string and completed's are BOOL", () => {
+    Body.map(iteration => {
+        pm.expect(iteration.title).is.a("string");
+        pm.expect(iteration.completed).is.a("boolean");
+    })
 })

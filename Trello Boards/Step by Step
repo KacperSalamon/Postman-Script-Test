@@ -1,0 +1,6 @@
+If you want automize your work to test API working correct - you can (for example) do 3 steps. Create, Get and Delete Board to check how How communication at the API and Server level will behave.
+In all my endpoints you can three collection variables in '{{collectionVariables}}'
+The first is id - this is unique string for any endpoint & Board. So you need to create the Board and get the id from first line in your request Body
+The second is - key. You need to generate it from Trello website
+The third is - token. You need to also generate it from Trello website
+The last two things is related with your Trello account, so it also unique :)

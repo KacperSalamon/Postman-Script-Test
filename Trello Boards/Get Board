@@ -1,0 +1,1 @@
+https://api.trello.com/1/boards/{{id}}?key={{key}}&token={{token}}

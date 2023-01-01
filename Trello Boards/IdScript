@@ -1,0 +1,6 @@
+Set the id collectionVariable - thanks that we don't have to paste the id every time
+//
+let bodyBoard = pm.response.json();
+
+pm.collectionVariables.set("id", bodyBoard.id);
+//

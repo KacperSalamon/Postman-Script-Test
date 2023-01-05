@@ -11,7 +11,7 @@ let fullDateToTen = year + "-0" + month + "-0" + day;
 
 let fullDateAfterTen = year + "-" + month + "-" + day;
 
-if(month < 9 || day < 9){
+if(month < 9 && day < 9){
     pm.collectionVariables.set("date", fullDateToTen);
 }else{
     pm.collectionVariables.set("date", fullDateAfterTen);
